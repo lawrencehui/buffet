@@ -1,0 +1,37 @@
+<template name="alertList">
+  <div class="watch-list-main-container">
+    <div class="title">Stock Alerts</div>
+    <div class="decor"></div>
+    <!-- <div class="header-container">
+      <div class="number">No.</div>
+      <div class="name">Name</div>
+      <div class="price">Price</div>
+      <div class="change">Change</div>
+    </div> -->
+    <div class="content-container">
+      {{#each alertList}}
+        <div class="stock-cell">
+
+          <div class="title">
+            {{#with stock}}
+            <div class="">
+              <span class="number">{{number}}</span>
+              <span class="name">{{stockEn}}</span>
+            </div>
+            {{/with}}
+            <div class="remove-btn">
+              <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </div>
+
+          </div>
+
+          <div class="cell">
+            <div class="label">Target Price</div>
+            <div class="value">{{price}}</div>
+          </div>
+
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</template>

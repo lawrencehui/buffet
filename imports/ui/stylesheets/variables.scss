@@ -1,0 +1,68 @@
+$theme-color: #3498DB;
+$theme-fb-blue: #0084ff;
+$theme-color-light: #85c1e9;
+$theme-color-pale: #e4f1fe;
+$theme-font: 'Montserrat', sans-serif;
+$theme-subfont: 'OpenSans', sans-serif;
+$grey-0: #fafafa;
+$grey-1: #f2f2f2;
+$grey-2: #e6e6e6;
+$grey-3: #cccccc;
+$grey-4: #999999;
+$grey-5: #666666;
+$grey-6: #333333;
+$grey-7: #1a1a1a;
+$black: #000000;
+$white: #ffffff;
+$danger: #ff3a2f;
+
+$contacts-bg: $grey-7;
+$contacts-subtext: $grey-5;
+$contacts-separator: $grey-6;
+$contacts-text: $white;
+
+$calendar-date-disabled: $grey-3;
+$calendar-date: $black;
+$calendar-date-today: $theme-color;
+$calendar-bg: $grey-1;
+$calendar-freeslot: $theme-color-pale;
+$calendar-filter-bar: $grey-1;
+$calendar-self-bar: $theme-color;
+$calendar-text-grey: $grey-4;
+
+$table-view-bg: $grey-1;
+$table-view-bg-light: $grey-0;
+$table-view-cell-border: $grey-2;
+
+$text-color: $black;
+$text-color-theme: $theme-color;
+$text-color-dark-grey: $grey-6;
+$text-color-grey: $grey-5;
+$text-color-light-grey: $grey-4;
+$text-color-danger: $danger;
+
+$theme-table-view-header-color: #929497;
+$theme-table-view-title-color: #666666;
+$theme-danger: red;
+
+// $theme-grey-line: #e6e7e8;
+// $theme-grey-body-text: #58595B;
+// $theme-grey-sub-header: #B3B3B3;
+// $theme-grey-inactive: #BBBDBF;
+// $theme-blue-background: #F7F7F9;
+// $theme-grey-blue: #8585AF;
+// $theme-black: #000;
+//
+$tab-bar-bg: $white;
+$tab-bar-border: $grey-2;
+
+$title-font-size: 1.0rem;
+$subtitle-font-size: 0.9rem;
+
+//LoginChooser
+$login-btn-height: 40px;
+$login-btn-margin: 12px;
+$login-btn-padding: 8px;
+$chooser-margin: 24px;
+
+$tab-bar-height: 44px;

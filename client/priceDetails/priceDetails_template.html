@@ -1,0 +1,79 @@
+<template name='priceDetails'>
+	<div class="priceDetails-container">
+		<div class="stockInfoContainer">
+			<div class="stockTicker">
+				{{stockCode}}
+			</div>
+			<div class="stockEngName">
+				<a href="http://www.aastocks.com/tc/stocks/news/aafn/latest-news/1?key={{stockCode}}">{{stockEn}}</a>
+			</div>
+			<div class="stockChiName">
+				<a href="http://www.aastocks.com/tc/stocks/news/aafn/latest-news/1?key={{stockCode}}">{{stockCn}}</a>
+			</div>
+		</div>
+		<div class="priceInfoContainer">
+			<div class="currentPrice"><span class="dollarSign">$</span>{{formatLtp ltp}}</div>
+			<div class="priceChange">{{getAbsChg ltp preCPrice}} ({{getPctChg ltp preCPrice}}%)</div>
+		</div>
+		<div id="testHighChart"></div>
+
+		<div class="graphInfoContainer">
+			<!-- <div class="stockGraph"></div> -->
+
+		</div>
+		<div class="statsInfoContainer">
+			<div class="sectionTitle">Stats</div>
+			<div class="statContentContainer">
+				<table class="tableLeft">
+					<tbody>
+						<tr>
+							<td class="label-txt">open</td>
+							<td>{{openPrc}}</td>
+						</tr>
+						<tr>
+							<td class="label-txt">day high</td>
+							<td>{{dyh}}</td>
+						</tr>
+						<tr>
+							<td class="label-txt">day low</td>
+							<td>{{dyl}}</td>
+						</tr>
+						<tr>
+							<td class="label-txt">52w high</td>
+							<td>{{wk52High}}</td>
+						</tr>
+						<tr>
+							<td class="label-txt">52w low</td>
+							<td>{{wk52Low}}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="tableRight">
+					<tbody>
+						<tr>
+							<td class="label-txt">volume</td>
+							<td>{{getVolume vol}}M</td>
+						</tr>
+						<tr>
+							<td class="label-txt">turnover</td>
+							<td>{{getTurnover tvr}}M</td>
+						</tr>
+						<tr>
+							<td class="label-txt">EPS</td>
+							<td>{{eps}}</td>
+						</tr>
+						<tr>
+							<td class="label-txt">Dividend</td>
+							<td>{{dividend}}</td>
+						</tr>
+						<tr>
+							<td class="label-txt">Lot</td>
+							<td>{{stockBoardLot}}</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+	</div>
+</template>

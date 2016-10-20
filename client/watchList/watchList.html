@@ -1,0 +1,36 @@
+<template name="watchList">
+  <div class="watch-list-main-container">
+    <div class="title">Watch List</div>
+    <div class="decor"></div>
+    <!-- <div class="header-container">
+      <div class="number">No.</div>
+      <div class="name">Name</div>
+      <div class="price">Price</div>
+      <div class="change">Change</div>
+    </div> -->
+    <div class="content-container">
+      {{#each watchList}}
+        <div class="stock-cell">
+          <div class="title">
+            <div class="">
+              <span class="number">{{number}}</span>
+              <span class="name">{{name}}</span>
+            </div>
+            <div class="remove-btn">
+              <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </div>
+
+          </div>
+          <div class="cell">
+            <div class="label">Price</div>
+            <div class="value">{{price}}</div>
+          </div>
+          <div class="cell">
+            <div class="label">Change</div>
+            <div class="value">{{change}}</div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</template>

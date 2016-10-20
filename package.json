@@ -1,0 +1,12 @@
+{
+  "name": "finbot",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "highcharts": "^4.2.6",
+    "meteor-node-stubs": "~0.2.0"
+  }
+}
